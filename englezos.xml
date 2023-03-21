@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="github-local" 
+		fetch="https://github.com/" 
+		revision="lineage-20" />
+		
+	<remote name="github-englezosaosp" 
+		fetch="https://github.com/" 
+		revision="lineage-20.0" />
+
+	<!-- Device -->
+	<project path="device/xiaomi/raphael" name="penglezos/device_xiaomi_raphael" remote="github-local" />
+	<project path="vendor/xiaomi/raphael" name="penglezos/vendor_xiaomi_raphael" remote="github-local" />
+	<project path="kernel/xiaomi/raphael" name="penglezos/kernel_xiaomi_raphael" remote="github-local" />
+	
+	<!-- LineageOS extras -->
+	<project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github-local" />
+	
+	<!-- Project Removal -->
+	<remove-project name="LineageOS/android_build" />
+	<remove-project name="LineageOS/android_lineage-sdk" />
+	<remove-project name="LineageOS/android_packages_apps_Settings" />
+	<remove-project name="LineageOS/android_build_soong" />
+	<remove-project name="LineageOS/android_frameworks_base" />
+	<remove-project name="LineageOS/android_packages_apps_Updater" />
+	<remove-project name="LineageOS/android_system_core" />
+	<remove-project name="LineageOS/android_packages_modules_Wifi" />
+	<remove-project name="LineageOS/android_packages_modules_Connectivity" />
+
+	<!-- EnglezosAOSP -->
+	<project path="build/make" name="EnglezosAOSP/android_build" remote="github-englezosaosp" />
+	<project path="packages/apps/Settings" name="EnglezosAOSP/android_packages_apps_Settings" remote="github-englezosaosp" />
+	<project path="lineage-sdk" name="EnglezosAOSP/android_lineage-sdk" remote="github-englezosaosp" />
+	<project path="build/soong" name="EnglezosAOSP/android_build_soong" remote="github-englezosaosp" />
+	<project path="frameworks/base" name="EnglezosAOSP/android_frameworks_base" remote="github-englezosaosp" />
+	<project path="packages/apps/Updater" name="EnglezosAOSP/android_packages_apps_Updater" remote="github-englezosaosp" />
+	<project path="system/core" name="EnglezosAOSP/android_system_core" remote="github-englezosaosp" />
+	<project path="packages/modules/Wifi" name="EnglezosAOSP/android_packages_modules_Wifi" remote="github-englezosaosp" />
+	<project path="packages/modules/Connectivity" name="EnglezosAOSP/android_packages_modules_Connectivity" remote="github-englezosaosp" />
+</manifest>
